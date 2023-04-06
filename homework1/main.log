@@ -1,0 +1,77 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.22)  5 APR 2023 19:01
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/cds/kszenes/code/courses/asl/homework1/main.tex
+(/home/cds/kszenes/code/courses/asl/homework1/main.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/data/soft/centos7/latex/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/data/soft/centos7/latex/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/data/soft/centos7/latex/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks14
+\labelindent=\skip43
+\enit@outerparindent=\dimen103
+\enit@toks=\toks15
+\enit@inbox=\box26
+\enitdp@description=\count87
+) (/home/cds/kszenes/code/courses/asl/homework1/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+ (/data/soft/centos7/latex/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 28.
+ [1
+
+{/data/soft/centos7/latex/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/home/cds/kszenes/code/courses/asl/homework1/main.aux) ) 
+Here is how much of TeX's memory you used:
+ 519 strings out of 493013
+ 7935 string characters out of 6126902
+ 64071 words of memory out of 5000000
+ 4136 multiletter control sequences out of 15000+600000
+ 4899 words of font info for 18 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,4n,19p,199b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+</data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></data/soft/centos7/latex/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on /home/cds/kszenes/code/courses/asl/homework1/main.pdf (1 page, 85715 bytes).
+PDF statistics:
+ 40 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

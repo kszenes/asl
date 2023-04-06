@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{enumitem}
+
+\begin{document}
+
+\section{Exercise 1}
+\begin{enumerate}[label=(\alph*)]
+    \item Processor: 6 core Intel(R) Xeon(R) E-2176G, Coffeelake based
+    \item Base: 3.70GHz
+    \item Max: 4.50GHz with TurboBoost 2.0
+    \item Phase: Optimization
+    \item \begin{itemize}
+        \item SSE2 supports vector operations using 128-bit registers.
+        \item SSE2 generally has better throughput than x87
+        \item x87 works on 80-bit floating-point precision
+        \item x87 support also trigonometric functions
+        \item SSE2 has a register based programming model whereas x87 is stack based
+    \end{itemize}
+    \item 2 FMA / cycle = 4 FLOP / cycle
+    \item \textit{MULSS/D}: Latency = 4 cycles, Throughput = 2 per cycle
+    \item \textit{SQRTSS/D}: Latency = 12, Throughput = 0.33 per cycle
+    \item \textit{ROUNDD}: Latency = 8, Throughput = 1 per cycle
+\end{enumerate}
+
+\section{Exercise 2}
+
+\begin{enumerate}[label=(\alph*)]
+    \item $FLOPs = n * n * (1 + n * 2) = 2 * n^3 + n^2$
+    \item $Memory = 2 * 8 * n^2$; $Op intensity < n^8 flops/byte$
+\end{enumerate}
+
+
+\section{Exercise 3}
+
+\begin{enumerate}[label=(\alph*)]
+    \item $C(n) = C_{add} * N_{add} + C_{mult} * N_{mult} + C_{max} * N_{max}$
+    \item $C(n) = C_{add} * 3n + C_{mult} * 3n + C_{max} * 1n$
+    \item \begin{itemize}
+        \item 0.5 cycle/flops * 7n flops = 3.5n cycles
+        \item 0.5 cycle/flops * 6n flops = 3n cycles
+        \item \begin{itemize}
+            \item L3: 1/4 cycle/double * 5n double = 5n/4 cycles
+            \item Main: 1/2 cycle/double * 5n double = 5n/2 cycles
+        \end{itemize}
+    \end{itemize}
+    \item $Intensity: 6n flops / (5n * 8) byte = 3/20 flops / byte$
+        
+\end{enumerate}
+
+
+\end{document}
