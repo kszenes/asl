@@ -15,7 +15,7 @@
 
 #define NUM_RUNS 1
 #define CYCLES_REQUIRED 1e8
-#define FREQUENCY 3.7e9
+#define FREQUENCY 2.6e9
 #define CALIBRATE
 #define alpha 0.2
 
@@ -226,7 +226,7 @@ double queryperfcounter(double A[], double B[], int n, LARGE_INTEGER f) {
 int main(int argc, char **argv) {
     if (argc!=2) {printf("usage: FW <n>\n"); return -1;}
     int n = atoi(argv[1]);
-    printf("n=%d \n",n);
+//    printf("n=%d \n",n);
     double* A = (double *)malloc(n*n*sizeof(double));
     double* B = (double *)malloc(n*n*sizeof(double));
     double flops = 2.0 * n * n * n + 1.0 * n * n;
@@ -236,16 +236,17 @@ int main(int argc, char **argv) {
 
 #ifdef __x86_64__
     double r = rdtsc(A, B, n);
-    printf("RDTSC instruction:\n %lf cycles measured => %lf seconds, assuming frequency is %lf MHz. (change in source file if different)--> %f flops; %f flops/cycle\n\n", r, r/(FREQUENCY), (FREQUENCY)/1e6, flops, flops / r);
+//    printf("RDTSC instruction:\n %lf cycles measured => %lf seconds, assuming frequency is %lf MHz. (change in source file if different)--> %f flops; %f flops/cycle\n\n", r, r/(FREQUENCY), (FREQUENCY)/1e6, flops, flops / r);
+printf("%f", flops / r);
 #endif
 
     double c = c_clock(A, B, n);
-    printf("C clock() function:\n %lf cycles measured. On some systems, this number seems to be actually computed from a timer in seconds then transformed into clock ticks using the variable CLOCKS_PER_SEC. Unfortunately, it appears that CLOCKS_PER_SEC is sometimes set improperly. (According to this variable, your computer should be running at %lf MHz). In any case, dividing by this value should give a correct timing: %lf seconds. \n\n",c, (double) CLOCKS_PER_SEC/1e6, c/CLOCKS_PER_SEC);
+//    printf("C clock() function:\n %lf cycles measured. On some systems, this number seems to be actually computed from a timer in seconds then transformed into clock ticks using the variable CLOCKS_PER_SEC. Unfortunately, it appears that CLOCKS_PER_SEC is sometimes set improperly. (According to this variable, your computer should be running at %lf MHz). In any case, dividing by this value should give a correct timing: %lf seconds. \n\n",c, (double) CLOCKS_PER_SEC/1e6, c/CLOCKS_PER_SEC);
 
 
 #ifndef WIN32
     double t = timeofday(A, B, n);
-    printf("C gettimeofday() function:\n %lf seconds measured\n\n",t);
+ //   printf("C gettimeofday() function:\n %lf seconds measured\n\n",t);
 #else
     LARGE_INTEGER f;
     double t = gettickcount(A, B, n);
