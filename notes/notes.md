@@ -26,11 +26,11 @@ Skylake microarchitecture floating point add
 Explanation: The processor can issue 2 flops / cycle and each flop requires 4 cycles to complete. In order to achieve best performance, we need to issue flop instructions each cycle. Since the first instruction will take 4 cycles to complete, we need to create separate accumulators for each issued flop instruction during this period in order to use ILP. Thus for 4 cycles, we issue 2 flop instruction and require 8 accumulators in total. After the 4 cycles the same accumulators can be reused since the previous operation has terminated.
 
 # Compiler Optimizations
-- Code Motion (e.g., Loop-invariant code motion): Remove redundant computations
+- **Code Motion** (e.g., Loop-invariant code motion): Remove redundant computations
   - Pull computation out of loop
-- Strength Reduction: Replace costly operations with simpler ones
+- **Strength Reduction**: Replace costly operations with simpler ones
     - Power by bit shift
-- Scalar Replacement: Copy memory variables that are reused into local variables
+- **Scalar Replacement**: Copy memory variables that are reused into local variables
   - Prevents memory aliasing issues
 
   # Tile Size for GEMM

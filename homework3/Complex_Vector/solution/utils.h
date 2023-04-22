@@ -5,7 +5,7 @@ template<typename T>
 void rands(T * m, size_t row, size_t col, double lo = -1.0, double up = 1.0)
 {
     std::random_device rd;
-    std::mt19937 gen{2};
+    std::mt19937 gen{rd()};
     std::uniform_real_distribution<T> dist(lo, up);
     for (size_t i = 0; i < row*col; ++i)  
         m[i] = dist(gen);

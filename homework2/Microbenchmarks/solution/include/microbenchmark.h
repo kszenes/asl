@@ -1,8 +1,6 @@
 #ifndef MICROBENCHMARK_H
 #define MICROBENCHMARK_H
 
-typedef double (*funPtr_t)();
-
 typedef enum {
     MAX_LAT,
     MAX_GAP,
@@ -30,7 +28,6 @@ double  microbenchmark_get_div_latency();
 double  microbenchmark_get_div_gap    ();
 double  microbenchmark_get_foo_latency();
 double  microbenchmark_get_foo_gap    ();
-double perf_test(funPtr_t f, const bool latency);
 
 
 #endif /* MICROBENCHMARK_H */

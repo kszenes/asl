@@ -1,0 +1,6 @@
+{
+  "main.cpp": "r",
+  "tsc_x86.h": "r",
+  "filter.cpp": "d",
+  "common.h": "r"
+}

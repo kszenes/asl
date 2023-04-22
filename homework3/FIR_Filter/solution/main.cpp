@@ -72,13 +72,14 @@ vector<string> funcNames;
 vector<int> funcFlops;
 int numFuncs = 0;
 
+
 template<typename T>
-void rands(T * m, size_t row, size_t col, double lo = -1.0, double up = 1.0)
+void rands(T * m, size_t row, size_t col)
 {
     std::random_device rd;
-    std::mt19937 gen{2};
-    std::uniform_real_distribution<T> dist(lo, up);
-    for (size_t i = 0; i < row*col; ++i)
+    std::mt19937 gen{rd()};
+    std::uniform_real_distribution<T> dist(-1.0, 1.0);
+    for (size_t i = 0; i < row*col; ++i)  
         m[i] = dist(gen);
 }
 
@@ -88,32 +89,6 @@ void build(T **a, int m, int n)
     *a = static_cast<T *>(aligned_alloc(32, m * n * sizeof(T)));
     rands(*a, m, n);
 }
-
-
-// template<typename T>
-// void rands(T * m, size_t row, size_t col)
-// {
-//     std::random_device rd;
-//     std::mt19937 gen{rd()};
-//     std::uniform_real_distribution<T> dist(-1.0, 1.0);
-//     for (size_t i = 0; i < row*col; ++i)  {
-//         m[i] = dist(gen);
-//         std::cout << m[i];
-
-//     }
-
-// }
-
-// template<typename T>
-// void build(T **a, int m, int n)
-// {
-//     std::cout << "m = " << m << "; n = " << n << "; size = " << m * n * sizeof(T) << '\n';
-//     *a = static_cast<T *>(aligned_alloc(32, m * n * sizeof(T)));
-//     for (int  i = 0; i < m * n; ++i) {
-//       std::cout << i << ": " << *((*a) + i) << '\n';
-//     }
-//     rands(*a, m, n);
-// }
 
 template<typename T>
 void destroy(T* m)
